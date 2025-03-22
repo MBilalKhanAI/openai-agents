@@ -35,7 +35,7 @@ A collection of specialized AI agents built using OpenAI's API for various tasks
      - Description
    - Includes date validation and formatting
 
-6. **Subject Expert Agents** (`subject_expert_agents.py`)
+6. **Subject Expert Agents** (`6_subject_expert_agents.py`)
    - Specialized system for handling subject-specific queries
    - Features expert agents for:
      - Mathematics (math tutor)
@@ -67,7 +67,7 @@ python 2_document_translator.py
 python 3_content_generator.py
 python 4_data_analyzer.py
 python 5_calendar_extractor.py
-python subject_expert_agents.py
+python 6_subject_expert_agents.py
 ```
 
 ## Requirements
