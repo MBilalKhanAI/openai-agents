@@ -35,6 +35,16 @@ A collection of specialized AI agents built using OpenAI's API for various tasks
      - Description
    - Includes date validation and formatting
 
+6. **Subject Expert Agents** (`subject_expert_agents.py`)
+   - Specialized system for handling subject-specific queries
+   - Features expert agents for:
+     - Mathematics (math tutor)
+     - Philosophy (philosophy tutor)
+     - Other subjects (with appropriate redirection)
+   - Intelligent triage system to route queries to appropriate expert
+   - Uses Gemini API for enhanced capabilities
+   - Includes guardrail system for query classification
+
 ## Setup
 
 1. Clone the repository
@@ -42,9 +52,10 @@ A collection of specialized AI agents built using OpenAI's API for various tasks
    ```bash
    pip install -r requirements.txt
    ```
-3. Create a `.env` file with your OpenAI API key:
+3. Create a `.env` file with your API keys:
    ```
-   OPENAI_API_KEY=your_api_key_here
+   OPENAI_API_KEY=your_openai_api_key_here
+   GEMINI_API_KEY=your_gemini_api_key_here
    ```
 
 ## Usage
@@ -56,12 +67,14 @@ python 2_document_translator.py
 python 3_content_generator.py
 python 4_data_analyzer.py
 python 5_calendar_extractor.py
+python subject_expert_agents.py
 ```
 
 ## Requirements
 
 - Python 3.7+
 - OpenAI API key
+- Google Gemini API key (for subject expert agents)
 - Dependencies listed in requirements.txt
 
 ## License
